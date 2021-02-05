@@ -27,27 +27,3 @@ DWORD GetProcessID(const char* processName)
 	CloseHandle(handleSnap); // Closes the handle to the process snapshot, helps to prevent memory leaks.
 	return processID; // Returns the process ID.
 }
-
-uintptr_t GetModuleBaseAddress(DWORD processID, const char* moduleName) // uintptr_t will compile to both x64 and x86. Same as the previous function but for modules.
-{
-	uintptr_t moduleBaseAddress = 0;
-	HANDLE handleSnap = CreateToolhelp32Snapshot(TH32CS_SNAPMODULE | TH32CS_SNAPMODULE32, processID); // We use the or so we can get both 64 and 32 bit modules.
-	if (handleSnap != INVALID_HANDLE_VALUE)
-	{
-		MODULEENTRY32 moduleEntry;
-		moduleEntry.dwSize = sizeof(moduleEntry);
-		if (Module32First(handleSnap, &moduleEntry))
-		{
-			do
-			{
-				if (!_stricmp(moduleEntry.szModule, moduleName))
-				{
-					moduleBaseAddress = (uintptr_t)moduleEntry.modBaseAddr;
-					break;
-				}
-			} while (Module32Next(handleSnap, &moduleEntry));
-		}
-	}
-	CloseHandle(handleSnap);
-	return moduleBaseAddress;
-}
