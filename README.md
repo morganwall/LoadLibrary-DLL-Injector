@@ -14,7 +14,7 @@ This project was wrote and will only run on Windows.
 First, please make sure that you have Microsoft Visual Studio 2019 intalled, along with platform toolset v142.
 Open the .sln file included in the folder, with Microsoft Visual Studio 2019.
 After that, select the build options that correlate to the architecture of your desired target program <code>Release | x64/x86</code> and press Build.
-Upon completion, you should a binary called "LoadLibrary DLL Injector.exe".
+Upon completion, you should find a binary called "LoadLibrary DLL Injector.exe".
 ### Operation
 After launching the exe, you will be greeted by a console window.
 You will first be asked to enter the name of your DLL file <code>e.g. Internal</code>, followed by the name of the target process <code>e.g. notepad</code>.
