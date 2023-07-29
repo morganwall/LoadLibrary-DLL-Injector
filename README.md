@@ -20,5 +20,5 @@ After launching the exe, you will be greeted by a console window.
 You will first be asked to enter the name of your DLL file <code>e.g. Internal</code>, followed by the name of the target process <code>e.g. notepad</code>.
 NOTE: Do not include file extentions in the file name. Also please make sure that your DLL file is placed in the same path as the built binary.
 ### License
-<blockquote>Copyright (c) 2021 Morgan Wall</blockquote>
+<blockquote>Copyright (c) 2023 Morgan Wall</blockquote>
 This project is licensed under the <a href="https://choosealicense.com/licenses/gpl-3.0/">GNU General Public License v3.0 License</a> - refer to the <a href="https://github.com/morganwall/LoadLibrary-DLL-Injector/blob/main/LICENSE">LICENSE</a> for more detail.
