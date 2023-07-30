@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="proc.cpp">
+    <ClCompile Include="src\proc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LoadLibrary DLL Injector.cpp">
+    <ClCompile Include="src\LoadLibrary DLL Injector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="proc.h">
+    <ClInclude Include="src\proc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

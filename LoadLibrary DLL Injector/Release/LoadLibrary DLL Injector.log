@@ -1,0 +1,7 @@
+﻿  LoadLibrary DLL Injector.cpp
+  proc.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 157 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LoadLibrary DLL Injector.vcxproj -> C:\Github\LoadLibrary-DLL-Injector\Release\LoadLibrary DLL Injector.exe
